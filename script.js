@@ -1,6 +1,6 @@
-function DomElement(selector, heigth, width, bg, fonSize){
+function DomElement(selector, height, width, bg, fonSize){
     this.selector = selector;
-    this.heigth = heigth;
+    this.height = height;
     this.width = width;
     this.bg = bg;
     this.fontSize = fonSize; 
@@ -17,8 +17,8 @@ DomElement.prototype.ride = function (item){
     divElement.textContent = 'Любой текст!!!';
     document.body.appendChild(divElement);
     console.log(divElement);
-    divElement.style.display = 'block';
-    divElement.style.heigth = this.heigth;
+    
+    divElement.style.height = this.height;
     divElement.style.width = this.width;
     divElement.style.background = this.bg;
     divElement.style.fontSize = this.fontSize;
